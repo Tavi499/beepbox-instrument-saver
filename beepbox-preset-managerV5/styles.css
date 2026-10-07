@@ -1,0 +1,175 @@
+#beepbox-preset-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 290px;
+  max-height: 85vh;
+  background-color: #1c1c24;
+  color: #d1d1e0;
+  border: 1px solid #44445c;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#beepbox-preset-panel h3 {
+  margin: 0;
+  font-size: 13px;
+  color: #8a9cff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.backup-section {
+  border-top: 1px solid #333348;
+  padding-top: 8px;
+}
+
+.input-group {
+  display: flex;
+  gap: 6px;
+}
+
+.input-group input, .input-group select, .rename-input {
+  flex: 1;
+  background: #0f0f14;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.input-group button, .actions button {
+  background: #3b3b54;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.btn-secondary {
+  background: #2a2a3b !important;
+  border: 1px solid #4d4d68 !important;
+  flex: 1;
+}
+
+.input-group button:hover, .actions button:hover {
+  background: #535378;
+}
+
+#tree-container {
+  overflow-y: auto;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.folder-group {
+  background: #252533;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.folder-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: #2e2e40;
+  border-bottom: 1px solid #38384d;
+}
+
+.btn-toggle-folder {
+  background: none;
+  border: none;
+  color: #8a9cff;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 0;
+  width: 14px;
+  text-align: center;
+}
+
+.folder-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e2e2ff;
+  flex: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preset-list {
+  list-style: none;
+  padding: 4px 6px;
+  margin: 0;
+}
+
+.empty-msg {
+  font-size: 10px;
+  color: #777;
+  font-style: italic;
+  padding: 4px;
+}
+
+.preset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c24;
+  padding: 4px 6px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  gap: 6px;
+}
+
+.preset-label {
+  font-size: 11px;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
+}
+
+.actions {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.btn-rename { background: #4a4a6a !important; }
+.btn-save-rename { background: #2e7d32 !important; }
+.btn-cancel-rename { background: #616161 !important; }
+
+.btn-export-folder {
+  background: #2e517d !important;
+}
+
+.btn-delete-folder, .btn-delete-preset {
+  background: #8b3a3a !important;
+  color: #fff !important;
+}
+
+.btn-delete-folder:hover, .btn-delete-preset:hover {
+  background: #b54545 !important;
+}

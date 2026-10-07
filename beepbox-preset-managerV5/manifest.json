@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "BeepBox & Mods Instrument Saver",
+  "version": "1.5",
+  "description": "Save and load custom instrument presets across BeepBox, UltraBox, JummBox, and other mods.",
+  "permissions": [
+    "storage",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.beepbox.co/*",
+        "https://*.beepbox.co/*",
+        "https://ultrabox.github.io/*",
+        "https://*.ultrabox.github.io/*",
+        "https://jummbox.github.io/*",
+        "https://*.jummbox.github.io/*",
+        "https://beepbox.co/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
